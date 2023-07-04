@@ -1,1 +1,1 @@
-hello server
+rewrite the content of blog1.txt
