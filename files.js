@@ -55,16 +55,16 @@ fs.readFile('./docs/blog2.txt', (err, data) => {
     console.log(data.toString())
 })
 
-fs.writeFile('./docs/blog3.txt', "let's rearrange what we have or create a new one", (err) => {
+fs.writeFile('./docs/blog4.txt', "let's rearrange what we have or create a new one", (err) => {
     if(err){
         console.log(err)
     }
     console.log('creating and writing in blog3')
 })
 
-fs.unlink('./docs/blog3.txt', () => {
-    console.log('delete blog3')
-})
+// fs.unlink('./docs/blog4.txt', () => {
+//     console.log('delete blog3')
+// })
 
 if(!fs.existsSync('./docs/folder')){
     fs.mkdir('./docs/folder', (err) => {
